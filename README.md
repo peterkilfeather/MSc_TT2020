@@ -26,6 +26,7 @@
 | Differential Expression Analysis | [DESeq2 Vignette](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html) | *DESeq2 is the often the best R package for differential gene expression analysis. This link will take you to the user guide, which is referred to as a 'vignette' for Bioconductor packages. Start to notice the formats of data that DESeq2 accepts, the importance of how DESeq2 normalises samples, as is plainly explained in the StatQuest video below.* |
 | DESeq2 Analysis Workflow | [Vignette](https://www.bioconductor.org/packages/devel/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html) | The title author of DESeq2, Mike Love, also maintains a workflow vignette that you may find easier to interpret in the early stages. This workflow uses an example RNA-seq dataset; 'airway'. This dataset can be installed in R, as a package (google this!). Notice how in the workflow, he refers to the PubMed accession and GEO accession for 'metadata' and 'raw data': These are important sources of information about the experimental details.*|
 | Library normalisation | [StatQuest](https://www.youtube.com/watch?v=UFB993xufUU) | *The first video of a series on normalisation. This is one of many resources you will find on the internet about the importance of normalisation in data analysis. You may find that watching the [FPKM/TPM video](https://www.youtube.com/watch?v=TTUrtCY2k-w) alongside helps.*|
+| Visualising data with Shiny | [Shiny Gallery](https://shiny.rstudio.com/gallery/) | *Getting familiar with different ways of plotting data helps you understand your data better and share your findings. R provides 'Shiny', a service whereby your analysis results can be input into a great-looking website that you can share. Check out the gallery and then google some examples of RNA-seq analyses that are in R Shiny format.*|
 
 ## Papers
 
@@ -36,6 +37,10 @@
   - [Transcriptomic profiling of purified patient-derived dopamine neurons identifies convergent perturbations and therapeutics for Parkinson’s disease.](https://academic.oup.com/hmg/article/26/3/552/2917762)
   - [Cellular α-synuclein pathology is associated with bioenergetic dysfunction in Parkinson’s iPSC-derived dopamine neurons](https://academic.oup.com/hmg/article/28/12/2001/5315478)
   
+*Analysis package papers/examples of interesting analysis methods*
+- [Annotation-free quantification of RNA splicing using LeafCutter](https://www.nature.com/articles/s41588-017-0004-9)
+- [Integrative transcriptome analyses of the aging brain implicate altered splicing in Alzheimer’s disease susceptibility](https://www.nature.com/articles/s41588-018-0238-1)
+
 ## Packages/commands often used
 
 *This is growing list of packages/commands that I use very often*
@@ -52,4 +57,6 @@
 - STAR
 - multiqc
 - trim_galore
+- Cluster Window Manager for Google Chrome: A Godsend
+
 ```
