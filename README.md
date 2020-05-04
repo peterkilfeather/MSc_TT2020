@@ -37,6 +37,9 @@
   - [Cellular α-synuclein pathology is associated with bioenergetic dysfunction in Parkinson’s iPSC-derived dopamine neurons](https://academic.oup.com/hmg/article/28/12/2001/5315478)
   
 ### Packages/commands often used
+
+*This is growing list of packages/commands that I use very often*
+
 ```
 - ls, cd, mv, cp, rm, htop, ssh, screen, cut, sort, uniq, >, |, for i in *, parallel, echo
 - BioMaRt
@@ -50,5 +53,3 @@
 - multiqc
 - trim_galore
 ```
-
-*This is growing list of packages/commands that are very useful*
