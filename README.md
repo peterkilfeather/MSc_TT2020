@@ -2,7 +2,7 @@
 
 ## Welcome!
 
-*Below is a constantly updating table of resources that I have found useful and think will help to prime you with working with 'high dimensional data'. I will keep updating the table as we go, along, but please add to the list and put comments if you recommend something you have found. This field is constantly developing, and the techniques described are used in a spectrum of disciplines, so you may find answers to your questions on websites not immediately obvious to you!*
+*Here is a constantly updating set of resources that I have found useful and think will help to prime you with working with 'high dimensional data'. I will keep updating the table as you go along, but please add to the list and put your own notes in if you recommend something you have found. This field is constantly developing, and the techniques described are used in a spectrum of disciplines, so you may find answers to your questions on websites not immediately obvious to you!*
 
 - Please sign up for an [Amazon Web Services](https://aws.amazon.com/) account using your educational email address, to access their 'free tier', where you can experiment. Please then join ['AWS Educate'](https://aws.amazon.com/education/awseducate/), so you can obtain free credits for your account, to use more powerful hardware. On AWS, always use 'Europe - London (EU-West-2)'. Set up a t2.micro (free-tier) 'EC2' instance, with 30GB (free-tier) of 'EBS' storage. If this is confusing, I agree! Google helps a lot.
 
