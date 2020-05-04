@@ -29,7 +29,7 @@
 
 ### Papers
 
-*Here are some of the papers from our lab that concern RNA-seq data. Make a note of the methods used to produce the data and analyse it and some of the challenges that may be present in analysing it.*
+*Here are some of the papers from our lab that concern RNA-seq data. Make a note of the methods used to produce and analyse the data, and think of the challenges that may be present in analysing it. We will be using these datasets by first replicating the analysis, then looking to compare independent studies (GBA & LRRK2 - Tara), or investigate splicing (LRRK2 transcriptome-wide - Eugenio, LRRK2 specifically - Guusje*
 
   - [Single-Cell Sequencing of iPSC-Dopamine Neurons Reconstructs Disease Progression and Identifies HDAC4 as a Regulator of Parkinson Cell Phenotypes.](https://www.ncbi.nlm.nih.gov/pubmed/30503143)
   - [RNA sequencing reveals MMP2 and TGFB1 downregulation in LRRK2 G2019S Parkinson's iPSC-derived astrocytes.](https://www.ncbi.nlm.nih.gov/pubmed/31085228)
@@ -37,5 +37,18 @@
   - [Cellular α-synuclein pathology is associated with bioenergetic dysfunction in Parkinson’s iPSC-derived dopamine neurons](https://academic.oup.com/hmg/article/28/12/2001/5315478)
   
 ### Packages/commands often used
+```
+- ls, cd, mv, cp, rm, htop, ssh, screen, cut, sort, uniq, >, |, for i in *, parallel, echo
+- BioMaRt
+- Tidyverse (ggplot2, dplyr, tidyr...)
+- prcomp
+- kallisto
+- tximport
+- deseq2
+- fastqc
+- STAR
+- multiqc
+- trim_galore
+```
 
 *This is growing list of packages/commands that are very useful*
