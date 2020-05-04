@@ -10,6 +10,8 @@
 
 - **Note: Do not install R version 4.0.0! Stay on 3.6.1. Do a quick google to find out why, and we can discuss it if you are interested!**
 
+### Resources
+
 | Topic         | Link(s)       |  Notes |
 | :-------------: |:-------------:|:--:|
 | **Next-generation sequencing**      | [StatQuest Intro to RNA-Seq](https://www.youtube.com/watch?v=tlf6wYJrwKY&t=410s) | *NGS is getting cheaper every day, and the volume of data being output is huge. It is vital to understand the principles of NGS and to understand the basics of how an 'Illumina Sequencer' works. Find a video/article that works for you and we will talk about it*|
@@ -24,3 +26,16 @@
 | Differential Expression Analysis | [DESeq2 Vignette](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html) | *DESeq2 is the often the best R package for differential gene expression analysis. This link will take you to the user guide, which is referred to as a 'vignette' for Bioconductor packages. Start to notice the formats of data that DESeq2 accepts, the importance of how DESeq2 normalises samples, as is plainly explained in the StatQuest video below.* |
 | DESeq2 Analysis Workflow | [Vignette](https://www.bioconductor.org/packages/devel/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html) | The title author of DESeq2, Mike Love, also maintains a workflow vignette that you may find easier to interpret in the early stages. This workflow uses an example RNA-seq dataset; 'airway'. This dataset can be installed in R, as a package (google this!). Notice how in the workflow, he refers to the PubMed accession and GEO accession for 'metadata' and 'raw data': These are important sources of information about the experimental details.*|
 | Library normalisation | [StatQuest](https://www.youtube.com/watch?v=UFB993xufUU) | *The first video of a series on normalisation. This is one of many resources you will find on the internet about the importance of normalisation in data analysis. You may find that watching the [FPKM/TPM video](https://www.youtube.com/watch?v=TTUrtCY2k-w) alongside helps.*|
+
+### Papers
+
+*Here are some of the papers from our lab that concern RNA-seq data. Make a note of the methods used to produce the data and analyse it and some of the challenges that may be present in analysing it.*
+
+  - [Single-Cell Sequencing of iPSC-Dopamine Neurons Reconstructs Disease Progression and Identifies HDAC4 as a Regulator of Parkinson Cell Phenotypes.](https://www.ncbi.nlm.nih.gov/pubmed/30503143)
+  - [RNA sequencing reveals MMP2 and TGFB1 downregulation in LRRK2 G2019S Parkinson's iPSC-derived astrocytes.](https://www.ncbi.nlm.nih.gov/pubmed/31085228)
+  - [Transcriptomic profiling of purified patient-derived dopamine neurons identifies convergent perturbations and therapeutics for Parkinson’s disease.](https://academic.oup.com/hmg/article/26/3/552/2917762)
+  - [Cellular α-synuclein pathology is associated with bioenergetic dysfunction in Parkinson’s iPSC-derived dopamine neurons](https://academic.oup.com/hmg/article/28/12/2001/5315478)
+  
+### Packages/commands often used
+
+*This is growing list of packages/commands that are very useful*
