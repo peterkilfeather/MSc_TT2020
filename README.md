@@ -34,6 +34,7 @@
 
   - [Single-Cell Sequencing of iPSC-Dopamine Neurons Reconstructs Disease Progression and Identifies HDAC4 as a Regulator of Parkinson Cell Phenotypes.](https://www.ncbi.nlm.nih.gov/pubmed/30503143)
   - [RNA sequencing reveals MMP2 and TGFB1 downregulation in LRRK2 G2019S Parkinson's iPSC-derived astrocytes.](https://www.ncbi.nlm.nih.gov/pubmed/31085228)
+  - [An integrated transcriptomics and proteomics analysis reveals functional endocytic dysregulation caused by mutations in LRRK2](https://www.sciencedirect.com/science/article/pii/S0969996119300968?via%3Dihub)
   - [Transcriptomic profiling of purified patient-derived dopamine neurons identifies convergent perturbations and therapeutics for Parkinson’s disease.](https://academic.oup.com/hmg/article/26/3/552/2917762)
   - [Cellular α-synuclein pathology is associated with bioenergetic dysfunction in Parkinson’s iPSC-derived dopamine neurons](https://academic.oup.com/hmg/article/28/12/2001/5315478)
   
