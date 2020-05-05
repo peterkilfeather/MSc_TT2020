@@ -61,3 +61,12 @@
 - Cluster Window Manager for Google Chrome: A Godsend
 
 ```
+
+## Week 1 Task list - Updated Tuesday
+
+- [ ] Learn command line essentials (cd, ls, mv, cp, rm, wget, echo, screen)
+- [ ] Set up an AWS t2.micro instance with 30 GB EBS storage and ssh into this instance
+- [ ] Install conda on your AWS instance
+- [ ] Install fastqc in a conda environment named 'week_1' on your AWS instance
+- [ ] Download a pair of fastq files of RNAseq project (GBA bulk, LRRK2 neurons, etc) using wget
+
