@@ -96,3 +96,7 @@
   5. Download the Gencode primary assembly FASTA and GTF for [human](https://www.gencodegenes.org/human/)
   6. Generate a genome index using STAR: Follow section 2.1 of the [manual](https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf)
   7. Use a for loop to map your fastq reads to the genome index in STAR: See section 3.1 of the manual
+```
+Example for loop:
+for file in *1.fastq.gz ; do echo "STAR --numThreadN 4 --genomeDir folder_where_genome_index_is $file ${file%1.fastq.gz}2.fastq.gz" ; done
+```
