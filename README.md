@@ -89,7 +89,7 @@
   10. Open the '.html' files in your browser and take a look at the information. Google these quality checks and read the 'Babraham' guidance on them: [Example](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/4%20Per%20Base%20Sequence%20Content.html)
   
 ### Thursday: Guide
-  1. Access the EC2 instance (
+  1. Access the EC2 instance (ec2-3-11-80-159.eu-west-2.compute.amazonaws.com) (password: trinity)
   2. Install miniconda in your home folder
   3. Install STAR in a conda environment
   4. Download the fastq files from the [airway](https://www.ebi.ac.uk/ena/browser/view/PRJNA229998) project (perhaps divide up the task of downloading)
