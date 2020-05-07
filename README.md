@@ -87,3 +87,12 @@
   8. Add a new 'site': Protocol is SFTP, Host is the 'public DNS' of your AWS instance, Port is 22, User is ubuntu and key file is the '.pem' file you made yesterday.
   9. Connect and download all the 'fastqc' output files
   10. Open the '.html' files in your browser and take a look at the information. Google these quality checks and read the 'Babraham' guidance on them: [Example](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/4%20Per%20Base%20Sequence%20Content.html)
+  
+### Thursday: Guide
+  1. Access the EC2 instance (
+  2. Install miniconda in your home folder
+  3. Install STAR in a conda environment
+  4. Download the fastq files from the [airway](https://www.ebi.ac.uk/ena/browser/view/PRJNA229998) project (perhaps divide up the task of downloading)
+  5. Download the Gencode primary assembly FASTA and GTF for [human](https://www.gencodegenes.org/human/)
+  6. Generate a genome index using STAR: Follow section 2.1 of the [manual](https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf)
+  7. Use a for loop to map your fastq reads to the genome index in STAR: See section 3.1 of the manual
