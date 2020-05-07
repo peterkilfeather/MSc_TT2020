@@ -1,0 +1,46 @@
+---
+title: "From GEO TVS to txt links"
+output: html_notebook
+---
+
+```{r}
+#load libraries
+library(tidyverse)
+```
+
+
+```{r}
+#load cvs file 
+
+downloads <- read_delim("/Users/eugeniograceffo/Desktop/Oxford/2nd Rotation /R/Downloads.csv", 
+    ";", escape_double = FALSE, trim_ws = TRUE)
+head(downloads)
+```
+
+```{r}
+#Selects only Fastq_ftp columns and eparates the links into two columns
+downloads<- downloads %>%
+  
+  select('fastq_ftp') %>%
+  separate('fastq_ftp', c('Link1', 'link2'), ';') %>%
+  select('Link1')
+
+head(downloads)
+```
+
+```{r}
+#exports the table in csv and txt file
+
+write.table(downloads,"download_links.txt", row.names = FALSE, col.names=FALSE, quote=FALSE)
+#write.csv(downloads,"download_link.csv", row.names = FALSE)
+```
+
+
+
+
+
+
+
+
+
+
