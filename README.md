@@ -100,3 +100,15 @@
 Example for loop:
 for file in *1.fastq.gz ; do echo "STAR --numThreadN 4 --genomeDir folder_where_genome_index_is $file ${file%1.fastq.gz}2.fastq.gz" ; done
 ```
+
+### Friday: Guide
+  1. Our objective is complete mapping the airway fastq files to the human genome reference 38 from GENCODE.
+  2. Your AWS instance is accessible using: `ssh -i "msc_tt2020.pem" ubuntu@ec2-18-132-67-54.eu-west-2.compute.amazonaws.com` from the directory in which your `.pem` file is stored.
+  3. One person install miniconda, then notify everyone when it is installed.
+  4. Each person creates their own environment, including their initials.
+  5. Thursday's work is stored in the `/home/ubuntu/thursday` folder
+  6. Friday's space is `/home/ubuntu/friday`
+  7. To see how much space is free, type `df -h`: You will see that the `thursday` folder is currently almost full.
+  8. To see how much space each folder in a given directory takes up, type `du -chd 1`
+  9. Using these commands, try to decide whether you can optimise the amount of space you are using in the `thursday` folder (you could do this while waiting for STAR to generate an index in the `friday` folder)
+  10. One way to save space is to avoid having duplicates of large files. You could agree upon a single folder to store the fastq files, reference genome files, and STAR index, and then create [symbolic links](https://kb.iu.edu/d/abbe) to your own working folders (or just reference this single shared folder in each of your commands).
