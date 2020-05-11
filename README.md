@@ -127,3 +127,5 @@ for file in *1.fastq.gz ; do echo "STAR --numThreadN 4 --genomeDir folder_where_
   2. Set up miniconda + an environment with samtools, picard, rseqc and subread.
   3. Convert your SAM files to BAM files, sort them, index them.
   4. Run Picard CollectRNASeqMetrics on each bam file
+  5. Run any RSeqQC modules you see as informative (e.g. junction saturation, inner_distance, read_distribution, read_duplication...)
+  6. Compile QC reports from fastqc, STAR, Picard and RSeqQC into a multiQC report (see multiQC documentation)
