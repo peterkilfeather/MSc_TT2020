@@ -115,6 +115,13 @@ for file in *1.fastq.gz ; do echo "STAR --numThreadN 4 --genomeDir folder_where_
   
   ### Monday 11th May: Guide
   - **Today's AWS address: `ec2-18-130-119-110.eu-west-2.compute.amazonaws.com`**
+  - [Samtools tutorial](http://quinlanlab.org/tutorials/samtools/samtools.html)
+  - [Airway paper, see RNA seq methods section](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4057123/)
+  - [Picard, CollectRNASeqMetrics: *Note, picard can be fussy about how the command is written!](http://broadinstitute.github.io/picard/command-line-overview.html#CollectRnaSeqMetrics)
+  - [RSeqQC](http://rseqc.sourceforge.net/)
+  - [MultiQC](file:///Users/peterkilfeather/Downloads/multiqc_report/multiqc_report.html)
+  
   1. Sync your personal AWS S3 folder to a personal folder within the `Monday` folder on the instance.
-  2. Set up miniconda + an environment with samtools, picard, rnaseqc and subread.
+  2. Set up miniconda + an environment with samtools, picard, rseqc and subread.
   3. Convert your SAM files to BAM files, sort them, index them.
+  4. Run Picard CollectRNASeqMetrics on each bam file
