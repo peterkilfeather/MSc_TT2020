@@ -119,7 +119,9 @@ for file in *1.fastq.gz ; do echo "STAR --numThreadN 4 --genomeDir folder_where_
   - [Airway paper, see RNA seq methods section](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4057123/)
   - [Picard, CollectRNASeqMetrics: *Note, picard can be fussy about how the command is written!](http://broadinstitute.github.io/picard/command-line-overview.html#CollectRnaSeqMetrics)
   - [RSeqQC](http://rseqc.sourceforge.net/)
-  - [MultiQC](file:///Users/peterkilfeather/Downloads/multiqc_report/multiqc_report.html)
+  - [MultiQC: Check out the **modules** section for information on what it needs to compile information from each tool](https://multiqc.info/docs/)
+  - [featurecounts](http://bioinf.wehi.edu.au/featureCounts/)
+  
   
   1. Sync your personal AWS S3 folder to a personal folder within the `Monday` folder on the instance.
   2. Set up miniconda + an environment with samtools, picard, rseqc and subread.
