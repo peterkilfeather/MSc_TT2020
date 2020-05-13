@@ -129,3 +129,15 @@ for file in *1.fastq.gz ; do echo "STAR --numThreadN 4 --genomeDir folder_where_
   4. Run Picard CollectRNASeqMetrics on each bam file
   5. Run any RSeqQC modules you see as informative (e.g. junction saturation, inner_distance, read_distribution, read_duplication...)
   6. Compile QC reports from fastqc, STAR, Picard and RSeqQC into a multiQC report (see multiQC documentation)
+
+  ### Wednesday 13th May: Guide
+  - Merge/Join Featurecounts counts tables.
+  - Convert sample names to just SRR accession number
+  - Create sample metadata/coldata table with relevant biological and technical groups labelled
+  - Import count data and metadata into DESeq2 in R
+  - Run a treatment group comparison in DESeq2, by expressing a 'design' (e.g. ~ treatment_group)
+  - Produce the DESeq2 results table and filter for genes below an adjust P value of 0.01 and with a greater log2Foldchange than 1, *both up and down*
+  - Plot a gene's expression between treatment groups
+  - Export a normalised counts table from DESeq2
+  - Use a normalised counts table to run PCA with *prcomp*
+  - Plot a PCA biplot and label the samples according to their biological or techincal groups.
