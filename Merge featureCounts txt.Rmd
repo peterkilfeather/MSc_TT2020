@@ -1,0 +1,52 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+```{r}
+#load libraries
+library(tidyverse)
+
+```
+
+```{r}
+#load libraries and cvs file 
+setwd("~/Desktop/Oxford/2nd Rotation /Transcriptomics")
+allcounts <- read.delim("~/Desktop/Oxford/2nd Rotation /Transcriptomics/counts.total.paired.txt", quote="", comment.char="#")
+head(allcounts) #loaded from Guusje
+
+featureCounts <- read.delim("~/Desktop/Oxford/2nd Rotation /Transcriptomics/featureCounts.txt", quote="", comment.char="#")
+head(featureCounts)
+
+```
+```{r}
+#remove columns with duplicates on Guusje's file
+allcounts<- select(allcounts,-7, -9, -11, -13, -15, -17, -19)
+head(allcounts)
+```
+
+```{r}
+#combine the tables
+joined_table<- featureCounts %>%
+  full_join(allcounts, by=c('Geneid', 'Chr', 'Start', 'End', 'Strand', 'Length'))
+  
+joined_table[is.na(joined_table)]=0    #mutates NA into 0
+
+head(joined_table)
+
+```
+
+```{r}
+#remove version of EMBL
+#rm(joined_table_no_EMBL) for debugging
+joined_table_no_EMBL <- joined_table %>%
+  separate('Geneid', c('Geneid','EMBL_Version'),'\\.')
+head(joined_table_no_EMBL)
+```
+
+
+
+
+
