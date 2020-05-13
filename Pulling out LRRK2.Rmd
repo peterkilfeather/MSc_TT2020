@@ -1,0 +1,44 @@
+---
+title: "featureCounts"
+output: html_document
+---
+## load in data
+```{r}
+library(readr)
+# SRR1039513counts <- read.table("SRR1039513counts.txt", sep = "\t", header = T) # one sample
+allcounts <- read.table("counts.total.paired.txt", sep ="\t", header = T)      # all samples
+# View(SRR1039513counts)
+# View(allcounts)
+head(allcounts)
+```
+
+## insert a new column without the period
+```{r}
+allcounts["Geneidwithout"]= ""
+allcounts = allcounts[, colnames(allcounts)[c(1,20,2:19)]]  # rearange
+allcounts = allcounts[,colnames(allcounts)[c(1:7,seq(from = 8, to = 18, by = 2,))]] # remove duplicate columns
+```
+
+## add the names without the "."
+```{r}
+for (i in 1:length(allcounts$Geneid)){
+  name = as.character(allcounts$Geneid[i])
+  y = strsplit(name, ".",fixed=T)
+  printwithout = y[[1]][1]
+  allcounts$Geneidwithout[i]=printwithout
+}
+```
+
+## see if LRRK2 is in there (google the geneID)
+```{r}
+allcounts$SRR1039514Aligned.out.bam[allcounts$Geneidwithout=="ENSG00000188906"]
+LRRK2 = c()
+for (i in 0:5){
+  col = 8 +i       # select column 8 and every column after that, since I accidentaly imported the .bam and .sorted.bam ;)
+  samplename = colnames(allcounts)[col]
+  LRRK2value = allcounts[allcounts$Geneidwithout=="ENSG00000188906",col]
+  LRRK2 = c(LRRK2,LRRK2value)
+}
+
+print(LRRK2)
+```
