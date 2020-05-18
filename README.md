@@ -152,3 +152,6 @@ for file in *1.fastq.gz ; do echo "STAR --numThreadN 4 --genomeDir folder_where_
   - Kallisto does not produce a log file, but outputs useful information to the terminal. MultiQC can use this output, so [**pipe the output to a file**](https://stackoverflow.com/questions/418896/how-to-redirect-output-to-a-file-and-stdout)
   - You will need **for** loops for some of this
   
+  - **Guusje**: Read the [Snaptron paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5870547/) and [Snaptron User Guide](http://snaptron.cs.jhu.edu/client.html).
+  - We should be able to query LRRK2 splicing using the snaptron client to their web service. We then want all the metadata possible for this. 
+  
