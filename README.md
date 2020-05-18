@@ -141,3 +141,14 @@ for file in *1.fastq.gz ; do echo "STAR --numThreadN 4 --genomeDir folder_where_
   - Export a normalised counts table from DESeq2
   - Use a normalised counts table to run PCA with *prcomp*
   - Plot a PCA biplot and label the samples according to their biological or techincal groups.
+  
+  ## Monday 18th May: Info
+  - [Google drive link to RWM data](https://drive.google.com/drive/folders/1kgdDdiirg-xhO0xxvNTKNPmKuxiqY3AK?usp=sharing)
+  - Go to 'experiments' folder and download the fastq files for gba_bulk and lrrk2
+  - Apply Fastqc/multiqc approach
+  - Acquaint yourself with [trim_galore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore)
+  - Acquaint yourself with [kallisto](https://pachterlab.github.io/kallisto/manual)
+  - For kallisto, you will need a **transcriptome** reference, not a primary genome reference. Beware of this when downloading a reference Fasta from Gencode/Ensembl.
+  - Kallisto does not produce a log file, but outputs useful information to the terminal. MultiQC can use this output, so [**pipe the output to a file**](https://stackoverflow.com/questions/418896/how-to-redirect-output-to-a-file-and-stdout)
+  - You will need **for** loops for some of this
+  
