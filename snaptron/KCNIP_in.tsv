@@ -1,0 +1,5 @@
+"region"	"either"	"filters"	"group"
+"chr4:20763023-20763023"	"2"	"strand=-&samples_count>=1"	"KCNIP4_2"
+"chr4:20763098-20763098"	"1"	"strand=-&samples_count>=1"	"KCNIP4_2"
+"chr4:20729056-20729056"	"2"	"strand=-&samples_count>=1"	"KCNIP4_1"
+"chr4:20729069-20729069"	"1"	"strand=-&samples_count>=1"	"KCNIP4_1"
