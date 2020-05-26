@@ -2,3 +2,4 @@
 - LRRK2_exons.tsv = Output of using snaptron's bed to tsv script
 - LRRK2_exonQuery.result = Output of using snaptron `--function exon` for LRRK2
 - LRRK2_exons.ts.tsv.gz = gzipped output of snaptron's TS function, specifying LRRK2_exons.tsv as input
+- rel_splices.hg38.snap.tsv = TS input from snaptron example
