@@ -1,4 +1,4 @@
-LRRK2_exons.bed = BED file of LRRK2 exons from GENCODE v32 hg38 obtained from UCSC table browser
-LRRK2_exons.tsv = Output of using snaptron's bed to tsv script
-LRRK2_exonQuery.result = Output of using snaptron `--function exon` for LRRK2
-LRRK2_exons.ts.tsv.gz = gzipped output of snaptron's TS function, specifying LRRK2_exons.tsv as input
+- LRRK2_exons.bed = BED file of LRRK2 exons from GENCODE v32 hg38 obtained from UCSC table browser
+- LRRK2_exons.tsv = Output of using snaptron's bed to tsv script
+- LRRK2_exonQuery.result = Output of using snaptron `--function exon` for LRRK2
+- LRRK2_exons.ts.tsv.gz = gzipped output of snaptron's TS function, specifying LRRK2_exons.tsv as input
