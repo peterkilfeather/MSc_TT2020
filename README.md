@@ -159,3 +159,10 @@ for file in *1.fastq.gz ; do echo "STAR --numThreadN 4 --genomeDir folder_where_
   - **Guusje**: Read the [Snaptron paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5870547/) and [Snaptron User Guide](http://snaptron.cs.jhu.edu/client.html).
   - We should be able to query LRRK2 splicing using the snaptron client to their web service. We then want all the metadata possible for this. 
   
+## Adding directories to the PATH variable
+  - If we remember, the PATH variable is where our shell looks for applications. We can see what it is currently equal to by running `echo $PATH`:
+```
+/Users/peterkilfeather/miniconda3/bin:/Users/peterkilfeather/miniconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+```
+  - If we want to add a folder containing an application, or "binary" to our PATH, we have to add it to the PATH. You can do this with a command, but often the simplest way is to edit the file where the PATH variable is set. In linux, this is `~/.bashrc`, on mac, this is `~/.bash_profile`. In that file, you will see the PATH variable. You want to add a `:` separator, as for the other directories, and then put in the absolute path to the folder you want to add. 
+  
