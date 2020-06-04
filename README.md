@@ -42,6 +42,10 @@
 - [Annotation-free quantification of RNA splicing using LeafCutter](https://www.nature.com/articles/s41588-017-0004-9)
 - [Integrative transcriptome analyses of the aging brain implicate altered splicing in Alzheimer’s disease susceptibility](https://www.nature.com/articles/s41588-018-0238-1)
 
+*RNA-Seq/Statistics papers*
+- [TPM/RPKM misuse](https://rnajournal.cshlp.org/content/early/2020/04/13/rna.074922.120.full.pdf)
+- [Between sample normalisation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6171491/)
+
 ## Packages/commands often used
 
 *This is growing list of packages/commands that I use very often*
