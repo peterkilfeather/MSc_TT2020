@@ -164,5 +164,8 @@ for file in *1.fastq.gz ; do echo "STAR --numThreadN 4 --genomeDir folder_where_
 ```
 /Users/peterkilfeather/miniconda3/bin:/Users/peterkilfeather/miniconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 ```
-  - If we want to add a folder containing an application, or "binary" to our PATH, we have to add it to the PATH. You can do this with a command, but often the simplest way is to edit the file where the PATH variable is set. In linux, this is `~/.bashrc`, on mac, this is `~/.bash_profile`. In that file, you will see the PATH variable. You want to add a `:` separator, as for the other directories, and then put in the absolute path to the folder you want to add. 
+  - If we want to add a folder containing an application, or "binary" to our PATH, we have to add it to the PATH. You can do this with a command, but often the simplest way is to edit the file where the PATH variable is set. In linux, this is `~/.bashrc`, on mac, this is `~/.bash_profile`. In that file, you will see the PATH variable. 
+  - Add a line at the bottom: `export /absolute/path/to/new/folder/of/binaries PATH`
+  - Save and load the new bash: `source ~/.bashrc`
+  - Test it: `echo $PATH`
   
